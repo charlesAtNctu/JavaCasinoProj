@@ -12,6 +12,14 @@ public class EuropeanRoulette implements Roulette {
     private int[] numbers = {  0,  32,  15,  19,   4,  21,   2,  25,  17,  34,   6,  27,  13,  36, 11,  30,  8,  23, 10,   5, 24,  16, 33,   1, 20,  14, 31,   9, 22,  18,  29,   7, 28,  12, 35,    3,  26};
     private char[] colors = {'G', 'R', 'B', 'R', 'B', 'R', 'B', 'R', 'B', 'R', 'B', 'R', 'B', 'R', 'B','R', 'B','R', 'B','R', 'B','R', 'B','R', 'B','R', 'B','R', 'B', 'R', 'B','R', 'B','R', 'B', 'R', 'B'};
 
+    public int getNumber(int index){
+        return numbers[index];
+    }
+
+    public char getColor(int index){
+        return colors[index];
+    }
+
     // step 4: instead of letting other people create, i create it within the class myself
     //private static EuropeanRoulette singleInstance = new EuropeanRoulette();
     // eager initalization !!!
